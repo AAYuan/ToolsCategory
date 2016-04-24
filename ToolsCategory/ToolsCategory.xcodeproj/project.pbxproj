@@ -15,6 +15,11 @@
 		8312FAE81CCC8F7C00EC61CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8312FAE61CCC8F7C00EC61CE /* LaunchScreen.storyboard */; };
 		8312FAF31CCC8F7C00EC61CE /* ToolsCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8312FAF21CCC8F7C00EC61CE /* ToolsCategoryTests.m */; };
 		8312FAFE1CCC8F7C00EC61CE /* ToolsCategoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8312FAFD1CCC8F7C00EC61CE /* ToolsCategoryUITests.m */; };
+		8312FB391CCC94FD00EC61CE /* NSDate+LTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8312FB2D1CCC94FD00EC61CE /* NSDate+LTYExtension.m */; };
+		8312FB3A1CCC94FD00EC61CE /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8312FB2F1CCC94FD00EC61CE /* Foundation+Log.m */; };
+		8312FB3B1CCC94FD00EC61CE /* UIBarButtonItem+LTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8312FB321CCC94FD00EC61CE /* UIBarButtonItem+LTYExtension.m */; };
+		8312FB3C1CCC94FD00EC61CE /* UIView+LTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8312FB351CCC94FD00EC61CE /* UIView+LTYExtension.m */; };
+		8312FB3D1CCC94FD00EC61CE /* UIWindow+Launch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8312FB381CCC94FD00EC61CE /* UIWindow+Launch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		8312FAF91CCC8F7C00EC61CE /* ToolsCategoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolsCategoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8312FAFD1CCC8F7C00EC61CE /* ToolsCategoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsCategoryUITests.m; sourceTree = "<group>"; };
 		8312FAFF1CCC8F7C00EC61CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8312FB2C1CCC94FD00EC61CE /* NSDate+LTYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LTYExtension.h"; sourceTree = "<group>"; };
+		8312FB2D1CCC94FD00EC61CE /* NSDate+LTYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LTYExtension.m"; sourceTree = "<group>"; };
+		8312FB2F1CCC94FD00EC61CE /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		8312FB311CCC94FD00EC61CE /* UIBarButtonItem+LTYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+LTYExtension.h"; sourceTree = "<group>"; };
+		8312FB321CCC94FD00EC61CE /* UIBarButtonItem+LTYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LTYExtension.m"; sourceTree = "<group>"; };
+		8312FB341CCC94FD00EC61CE /* UIView+LTYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LTYExtension.h"; sourceTree = "<group>"; };
+		8312FB351CCC94FD00EC61CE /* UIView+LTYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LTYExtension.m"; sourceTree = "<group>"; };
+		8312FB371CCC94FD00EC61CE /* UIWindow+Launch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Launch.h"; sourceTree = "<group>"; };
+		8312FB381CCC94FD00EC61CE /* UIWindow+Launch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Launch.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,7 @@
 		8312FAD71CCC8F7C00EC61CE /* ToolsCategory */ = {
 			isa = PBXGroup;
 			children = (
+				8312FB2A1CCC94FD00EC61CE /* Category */,
 				8312FADB1CCC8F7C00EC61CE /* AppDelegate.h */,
 				8312FADC1CCC8F7C00EC61CE /* AppDelegate.m */,
 				8312FADE1CCC8F7C00EC61CE /* ViewController.h */,
@@ -138,6 +153,62 @@
 				8312FAFF1CCC8F7C00EC61CE /* Info.plist */,
 			);
 			path = ToolsCategoryUITests;
+			sourceTree = "<group>";
+		};
+		8312FB2A1CCC94FD00EC61CE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8312FB2B1CCC94FD00EC61CE /* NSDate */,
+				8312FB2E1CCC94FD00EC61CE /* NSDictionary */,
+				8312FB301CCC94FD00EC61CE /* UIBarButtonItem */,
+				8312FB331CCC94FD00EC61CE /* UIView */,
+				8312FB361CCC94FD00EC61CE /* UIWindow */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8312FB2B1CCC94FD00EC61CE /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				8312FB2C1CCC94FD00EC61CE /* NSDate+LTYExtension.h */,
+				8312FB2D1CCC94FD00EC61CE /* NSDate+LTYExtension.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		8312FB2E1CCC94FD00EC61CE /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				8312FB2F1CCC94FD00EC61CE /* Foundation+Log.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		8312FB301CCC94FD00EC61CE /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				8312FB311CCC94FD00EC61CE /* UIBarButtonItem+LTYExtension.h */,
+				8312FB321CCC94FD00EC61CE /* UIBarButtonItem+LTYExtension.m */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
+		8312FB331CCC94FD00EC61CE /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				8312FB341CCC94FD00EC61CE /* UIView+LTYExtension.h */,
+				8312FB351CCC94FD00EC61CE /* UIView+LTYExtension.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		8312FB361CCC94FD00EC61CE /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+				8312FB371CCC94FD00EC61CE /* UIWindow+Launch.h */,
+				8312FB381CCC94FD00EC61CE /* UIWindow+Launch.m */,
+			);
+			path = UIWindow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +341,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8312FB3D1CCC94FD00EC61CE /* UIWindow+Launch.m in Sources */,
+				8312FB391CCC94FD00EC61CE /* NSDate+LTYExtension.m in Sources */,
+				8312FB3A1CCC94FD00EC61CE /* Foundation+Log.m in Sources */,
 				8312FAE01CCC8F7C00EC61CE /* ViewController.m in Sources */,
 				8312FADD1CCC8F7C00EC61CE /* AppDelegate.m in Sources */,
+				8312FB3B1CCC94FD00EC61CE /* UIBarButtonItem+LTYExtension.m in Sources */,
 				8312FADA1CCC8F7C00EC61CE /* main.m in Sources */,
+				8312FB3C1CCC94FD00EC61CE /* UIView+LTYExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +574,7 @@
 				8312FB041CCC8F7C00EC61CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8312FB051CCC8F7C00EC61CE /* Build configuration list for PBXNativeTarget "ToolsCategoryTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +583,7 @@
 				8312FB071CCC8F7C00EC61CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8312FB081CCC8F7C00EC61CE /* Build configuration list for PBXNativeTarget "ToolsCategoryUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +592,7 @@
 				8312FB0A1CCC8F7C00EC61CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

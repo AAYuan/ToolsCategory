@@ -12,7 +12,8 @@
 @implementation UIWindow (Launch)
 
 
-#pragma mark  主window
+#pragma mark  主窗口
+
 +(UIWindow *)appWindow{
     
     UIWindow *window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

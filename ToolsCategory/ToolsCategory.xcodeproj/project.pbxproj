@@ -20,6 +20,8 @@
 		8312FB3B1CCC94FD00EC61CE /* UIBarButtonItem+LTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8312FB321CCC94FD00EC61CE /* UIBarButtonItem+LTYExtension.m */; };
 		8312FB3C1CCC94FD00EC61CE /* UIView+LTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8312FB351CCC94FD00EC61CE /* UIView+LTYExtension.m */; };
 		8312FB3D1CCC94FD00EC61CE /* UIWindow+Launch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8312FB381CCC94FD00EC61CE /* UIWindow+Launch.m */; };
+		833289551CDACEC100F0ACB1 /* UIImage+LTYImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 833289511CDACEC100F0ACB1 /* UIImage+LTYImageExtension.m */; };
+		833289561CDACEC100F0ACB1 /* UIImageView+LTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 833289541CDACEC100F0ACB1 /* UIImageView+LTYExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,10 @@
 		8312FB351CCC94FD00EC61CE /* UIView+LTYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LTYExtension.m"; sourceTree = "<group>"; };
 		8312FB371CCC94FD00EC61CE /* UIWindow+Launch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Launch.h"; sourceTree = "<group>"; };
 		8312FB381CCC94FD00EC61CE /* UIWindow+Launch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Launch.m"; sourceTree = "<group>"; };
+		833289501CDACEC100F0ACB1 /* UIImage+LTYImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LTYImageExtension.h"; sourceTree = "<group>"; };
+		833289511CDACEC100F0ACB1 /* UIImage+LTYImageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LTYImageExtension.m"; sourceTree = "<group>"; };
+		833289531CDACEC100F0ACB1 /* UIImageView+LTYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LTYExtension.h"; sourceTree = "<group>"; };
+		833289541CDACEC100F0ACB1 /* UIImageView+LTYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LTYExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,8 @@
 		8312FB2A1CCC94FD00EC61CE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				8332894F1CDACEC100F0ACB1 /* UIImage */,
+				833289521CDACEC100F0ACB1 /* UIImageView */,
 				8312FB2B1CCC94FD00EC61CE /* NSDate */,
 				8312FB2E1CCC94FD00EC61CE /* NSDictionary */,
 				8312FB301CCC94FD00EC61CE /* UIBarButtonItem */,
@@ -209,6 +217,24 @@
 				8312FB381CCC94FD00EC61CE /* UIWindow+Launch.m */,
 			);
 			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		8332894F1CDACEC100F0ACB1 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				833289501CDACEC100F0ACB1 /* UIImage+LTYImageExtension.h */,
+				833289511CDACEC100F0ACB1 /* UIImage+LTYImageExtension.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		833289521CDACEC100F0ACB1 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				833289531CDACEC100F0ACB1 /* UIImageView+LTYExtension.h */,
+				833289541CDACEC100F0ACB1 /* UIImageView+LTYExtension.m */,
+			);
+			path = UIImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,12 +367,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				833289561CDACEC100F0ACB1 /* UIImageView+LTYExtension.m in Sources */,
 				8312FB3D1CCC94FD00EC61CE /* UIWindow+Launch.m in Sources */,
 				8312FB391CCC94FD00EC61CE /* NSDate+LTYExtension.m in Sources */,
 				8312FB3A1CCC94FD00EC61CE /* Foundation+Log.m in Sources */,
 				8312FAE01CCC8F7C00EC61CE /* ViewController.m in Sources */,
 				8312FADD1CCC8F7C00EC61CE /* AppDelegate.m in Sources */,
 				8312FB3B1CCC94FD00EC61CE /* UIBarButtonItem+LTYExtension.m in Sources */,
+				833289551CDACEC100F0ACB1 /* UIImage+LTYImageExtension.m in Sources */,
 				8312FADA1CCC8F7C00EC61CE /* main.m in Sources */,
 				8312FB3C1CCC94FD00EC61CE /* UIView+LTYExtension.m in Sources */,
 			);

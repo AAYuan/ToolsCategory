@@ -1,20 +1,20 @@
 //
-//  LTYPlacehorderTextView.m
+//  LTYPlaceholderTextView.m
 //
 //  Created by AYuan on 16/5/10.
 //  Copyright © 2016年 AYuan. All rights reserved.
 //
 
-#import "LTYPlacehorderTextView.h"
+#import "LTYPlaceholderTextView.h"
 
-@interface LTYPlacehorderTextView()
+@interface LTYPlaceholderTextView()
 
 /** 占位文字label*/
 @property (nonatomic, weak) UILabel *placeholderLabel;
 
 @end
 
-@implementation LTYPlacehorderTextView
+@implementation LTYPlaceholderTextView
 
 - (UILabel *)placeholderLabel
 {

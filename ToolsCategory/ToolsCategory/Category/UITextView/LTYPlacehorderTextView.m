@@ -1,20 +1,20 @@
 //
-//  LTYPlaceholderTextView.m
+//  LTYPlacehorderTextView.m
 //
 //  Created by AYuan on 16/5/10.
 //  Copyright © 2016年 AYuan. All rights reserved.
 //
 
-#import "LTYPlaceholderTextView.h"
+#import "LTYPlacehorderTextView.h"
 
-@interface LTYPlaceholderTextView()
+@interface LTYPlacehorderTextView()
 
 /** 占位文字label*/
 @property (nonatomic, weak) UILabel *placeholderLabel;
 
 @end
 
-@implementation LTYPlaceholderTextView
+@implementation LTYPlacehorderTextView
 
 - (UILabel *)placeholderLabel
 {
@@ -86,18 +86,35 @@
 //    [self.placeholder drawInRect:CGRectMake(rect.origin.x, rect.origin.y, self.width, self.height) withAttributes:attrs];
 //}
 
+
 /**
  * 更新占位文字的尺寸
  */
-
-- (void)updatePlaceholderLabelSize
+- (void)layoutSubviews
 {
-    CGSize maxSize = CGSizeMake(LTYScreenW - 2 * self.placeholderLabel.x, MAXFLOAT);
-    self.placeholderLabel.size = [self.placeholder boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.font} context:nil].size;
-
+    [super layoutSubviews];
+    self.placeholderLabel.width = self.frame.size.width - 2 * self.placeholderLabel.x;
+    [self.placeholderLabel sizeToFit];
 }
 
+//- (void)updatePlaceholderLabelSize
+//{
+////    CGSize maxSize = CGSizeMake(LTYScreenW - 2 * self.placeholderLabel.x, MAXFLOAT);
+////    self.placeholderLabel.size = [self.placeholder boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.font} context:nil].size;
+//    
+//    self.placeholderLabel.width = self.width - 2 * self.placeholderLabel.x;
+//    [self.placeholderLabel sizeToFit];
+//
+//}
+
+
+
 #pragma mark - 重写setter
+
+/**
+ * setNeedsLayout : 会在恰当的时刻调用layoutSubviews方法
+ * setNeedsDisplay : 会在恰当的时刻自动调用drawRect方法
+ */
 
 - (void)setPlaceholder:(NSString *)placeholder
 {
@@ -105,14 +122,14 @@
     
     self.placeholderLabel.text = placeholder;
 
-    [self updatePlaceholderLabelSize];
+    [self setNeedsLayout];
 }
 
 - (void)setPlaceholderColor:(UIColor *)placeholderColor
 {
     _placeholderColor = placeholderColor;
     
-    self.placeholderColor  = placeholderColor;
+    self.placeholderLabel.textColor  = placeholderColor;
 }
 
 - (void)setFont:(UIFont *)font
@@ -120,7 +137,7 @@
     [super setFont:font];
     
     self.placeholderLabel.font = font;
-    [self updatePlaceholderLabelSize];
+    [self setNeedsLayout];
     
 }
 

@@ -18,6 +18,8 @@ static FMDatabase *_db;
     //打开数据库
     NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"statuses.sqlite"];
     _db = [FMDatabase databaseWithPath:path];
+    [_db open];
+    
     //建表
     [_db executeUpdate:@"CREATE TABLE IF NOT EXISTS t_status (id integer PRIMARY KEY, status blob NOT NULL, idster text NOT NULL);"];
     
